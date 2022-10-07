@@ -8,6 +8,23 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@-webkit-keyframes makeBig {
+  0% {
+    font-size: 1em;
+  }
+  100% {
+    font-size: 2em;
+  }
+}
+
+@keyframes makeBig {
+  0% {
+    font-size: 1em;
+  }
+  100% {
+    font-size: 2em;
+  }
+}
 .fontLarge {
   font-size: 2.5rem;
 }
@@ -21,12 +38,21 @@ html {
 }
 
 .navMenu a {
+  color: black;
   text-decoration: none;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px #888888;
+  padding: 5px;
 }
 .navMenu a:visited {
-  color: #cbcbfc;
+  color: #A06CD5;
 }
 .navMenu a:active {
+  color: #FC5130;
+  -webkit-animation: makeBig 0.5s ease-in-out;
+          animation: makeBig 0.5s ease-in-out;
+}
+.navMenu a:hover {
   color: #FC5130;
 }
 
@@ -38,6 +64,7 @@ header {
 header p {
   font-family: "Shrikhand", cursive;
   color: #FC5130;
+  margin-bottom: 20px;
 }
 
 #logo {
