@@ -1,0 +1,42 @@
+@use "general";
+@import "variables";
+
+.fontLarge{
+    font-size: $fontLarge;
+}
+
+.fontBold{
+    font-weight: $fontBold;
+}
+
+
+header{
+    display: grid;
+    justify-items: center;
+    margin: 20px;
+    p{
+        font-family: $shrikhandFont;
+        color: $portlandOrange;
+    }
+}
+
+#logo{
+    width: 200px;
+    border-radius:100px;
+    transition: width 1s ease-in-out;
+    &:active{
+        width: 600px;
+    }
+}
+
+article{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 30px;
+    img{
+        width: 40vw;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}

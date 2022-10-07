@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #FFFAFF;
+}
+
+.fontLarge {
+  font-size: 2.5rem;
+}
+
+.fontBold {
+  font-weight: bold;
+}
+
+header {
+  display: grid;
+  justify-items: center;
+  margin: 20px;
+}
+header p {
+  font-family: "Shrikhand", cursive;
+  color: #FC5130;
+}
+
+#logo {
+  width: 200px;
+  border-radius: 100px;
+  transition: width 1s ease-in-out;
+}
+#logo:active {
+  width: 600px;
+}
+
+article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 30px;
+}
+article img {
+  width: 40vw;
+}
+article p {
+  font-family: Arial, Helvetica, sans-serif;
+}/*# sourceMappingURL=style.css.map */
